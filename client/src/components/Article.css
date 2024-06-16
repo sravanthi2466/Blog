@@ -1,0 +1,50 @@
+.article-container {
+    margin: 2rem;
+}
+
+.article-details {
+    margin-bottom: 1rem;
+}
+
+.article-details span {
+    margin-right: 1rem;
+}
+
+.edit-btn {
+    margin-right: 1rem;
+}
+
+.delete-btn {
+    margin-right: 1rem;
+}
+
+.restore-btn {
+    margin-right: 1rem;
+}
+
+.comment-form {
+    margin: 1rem 0;
+}
+
+.comment-form input {
+    margin-right: 1rem;
+}
+
+.comment-list {
+    margin-top: 1rem;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-user {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.comment-content {
+    margin-top: 0.5rem;
+}

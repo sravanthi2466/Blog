@@ -1,0 +1,77 @@
+:root {
+    --nav-bg-gradient: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* Beautiful gradient background */
+    --nav-text-color: #000000; /* Black text color for links */
+    --nav-hover-color: #e74c3c; /* Red hover effect color */
+    --nav-hover-size: 1.2rem; /* Increased size on hover */
+}
+
+.navmain {
+    font-size: 1.25rem;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav1 {
+    display: block;
+    background: var(--nav-bg-gradient); /* Apply gradient background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navchild1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.navchild2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.navchild2 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+}
+
+.navchild2 ul li {
+    position: relative;
+}
+
+.navchild2 ul li a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth color and size transitions */
+}
+
+.navchild2 ul li a:hover {
+    color: var(--nav-hover-color); /* Change text color on hover */
+    font-size: var(--nav-hover-size); /* Increase size on hover */
+}
+
+.navbar1 {
+    background: var(--nav-bg-gradient);
+}
+
+.navbar-brand {
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: var(--main-bg-color);
+    text-align: center;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--nav-hover-color);
+}

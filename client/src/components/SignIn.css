@@ -1,0 +1,100 @@
+
+:root {
+    --main-yellow: #f39c12; /* Main yellow color */
+    --hover-color: #3498db; /* Hover color */
+    --box-shadow-color: rgba(0, 0, 0, 0.2); /* Box shadow color */
+    --form-bg-color: #ecf0f1; /* Form background color */
+}
+
+.signinmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--form-bg-color);
+    padding: 2rem;
+}
+
+form {
+    border: 2px solid var(--main-yellow);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px var(--hover-color);
+}
+
+.radiobut {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    color: var(--main-yellow);
+}
+
+input[type="radio"] + label:hover {
+    color: var(--hover-color);
+}
+
+.uname, .password {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--box-shadow-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    box-shadow: 0 4px 8px var(--hover-color);
+}
+
+button {
+    background-color: var(--main-yellow);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+.lead {
+    margin-top: 1.5rem;
+}
+
+.lead a {
+    color: var(--hover-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lead a:hover {
+    text-decoration: underline;
+}

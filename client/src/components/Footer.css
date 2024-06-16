@@ -1,0 +1,113 @@
+:root {
+    --main-bg-color: #2c3e50; /* Dark blue background for footer */
+    --accent-color: #e74c3c; /* Bright red accent color */
+    --text-color: #ecf0f1; /* Light text color */
+    --hover-color: #e67e22; /* Orange hover effect color */
+    --link-hover-color: #3498db; /* Light blue link hover color */
+}
+
+/* Footer background and text color */
+.bg-footer {
+    background-color: var(--main-bg-color);
+    padding: 50px 0 30px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Footer links styling */
+.bg-footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
+}
+
+.bg-footer a:hover {
+    color: var(--hover-color);
+    transform: scale(1.1); /* Enlarge text on hover */
+}
+
+/* Footer headings styling */
+.footer-heading {
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+    color: var(--accent-color); /* Accent color for headings */
+}
+
+.footer-heading:after {
+    content: '';
+    width: 50px;
+    border-bottom: 2px solid var(--accent-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* Footer links list styling */
+.footer-link a {
+    line-height: 40px;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
+}
+
+.footer-link a:hover {
+    color: var(--hover-color);
+    transform: scale(1.1); /* Enlarge text on hover */
+}
+
+/* Contact info styling */
+.contact-info {
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Social media icons styling */
+.footer-social-icon {
+    font-size: 1.25rem;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and transform transitions */
+}
+
+.footer-social-icon:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Social media icons individual colors */
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+/* Footer alternate text styling */
+.footer-alt {
+    color: #acacac;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}

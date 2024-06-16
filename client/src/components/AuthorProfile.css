@@ -1,0 +1,67 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Root Variables for Consistent Styling */
+:root {
+  --background-color: #f8f9fa; /* Light grey background */
+  --text-color: #343a40; /* Dark grey text */
+  --primary-color: #007bff; /* Primary blue color */
+  --secondary-color: #6c757d; /* Secondary grey color */
+  --accent-color: #ffc107; /* Accent yellow color */
+  --link-color: #0056b3; /* Link blue color */
+  --hover-color: #0056b3; /* Hover blue color */
+  --button-bg-color: #007bff; /* Button background color */
+  --button-hover-bg-color: #0056b3; /* Button hover background color */
+  --card-bg-color: #ffffff; /* White card background */
+  --card-border-color: #dee2e6; /* Light grey card border */
+  --font-family: 'Rubik', sans-serif;
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.m-5 {
+  margin: 3rem !important;
+}
+
+.headings {
+  margin-top: 3rem;
+}
+
+/* Navigation List Items */
+.items1 {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.items1 .nav-item {
+  list-style: none;
+}
+
+/* Navigation Links */
+.link {
+  color: var(--accent-color);
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.link:hover {
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: 5rem;
+  padding: 1.2rem;
+}
+
+/* Active Link */
+.authorprof ul .active {
+  color: white !important;
+  background-color: var(--accent-color) !important;
+  border-radius: 5rem;
+  padding: 1.2rem;
+}
